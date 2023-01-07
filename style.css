@@ -1,0 +1,87 @@
+:root {
+  --mainbg: hsl(189, 41%, 97%);
+  --cardbg: hsl(0, 0%, 100%);
+  --Verydarkcyan: hsl(183, 100%, 15%);
+  --Darkgrayishcyan: hsl(186, 14%, 43%);
+  --Grayishcyan: hsl(184, 14%, 56%);
+  --Lightgrayishcyan: hsl(185, 41%, 84%);
+  --Verylightgrayishcyan: hsl(189, 41%, 97%);
+}
+
+/*------------------------GENERAL STYLES----------------------------------------*/
+body {
+  background: var(--Lightgrayishcyan);
+  font-family: "Space Mono", sans-serif;
+}
+
+h1 {
+  color: var(--Darkgrayishcyan);
+}
+
+h3 {
+  color: var(--Darkgrayishcyan);
+}
+
+/*------------------------MOBILE STYLES----------------------------------------*/
+.container {
+  min-width: 375px;
+  background-color: var(--cardbg);
+  padding: 15px;
+  border-radius: 15px;
+  margin: 50px auto;
+}
+.container .input-area {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--Lightgrayishcyan);
+}
+.container .flex {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.container .flex button {
+  background-color: var(--Verydarkcyan);
+  width: 200px;
+  border-color: var(--Verydarkcyan);
+  border-radius: 10px;
+}
+.container .flex button p {
+  color: var(--cardbg);
+}
+.container .dark {
+  background-color: var(--Verydarkcyan);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container .dark h3 {
+  color: var(--cardbg);
+}
+.container .dark p {
+  color: var(--Darkgrayishcyan);
+}
+.container .dark button {
+  background-color: hsl(183deg, 100%, 30%);
+  border-color: hsl(183deg, 100%, 30%);
+  border-radius: 10px;
+  width: 300px;
+}
+.container .dark button p {
+  font-weight: bolder;
+  color: var(--Verydarkcyan);
+}
+
+/*------------------------DESKTOP STYLES----------------------------------------*/
+@media (min-width: 800px) {
+  .container {
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 20px;
+  }
+  .container .dark button {
+    margin-top: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */
