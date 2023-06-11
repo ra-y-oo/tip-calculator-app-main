@@ -47,15 +47,15 @@ function calculateTip(billAmount, tipPercentage, numberOfPeople) {
   let totalAmount = (tipAmount * numberOfPeople + billAmount) / numberOfPeople;
   totalAmount = totalAmount.toFixed(2);
 
-  billTipAmount.innerHTML = `$${tip}`;
-  billTotalPerPerson.innerHTML = `$${totalAmount}`;
+  billTipAmount.innerHTML = `KES ${tip}`;
+  billTotalPerPerson.innerHTML = `KES ${totalAmount}`;
 }
 
 //Reset Everything
 resetButton.addEventListener("click", resetEverything);
 function resetEverything() {
-  billTipAmount.innerHTML = "$0.00";
-  billTotalPerPerson.innerHTML = "$0.00";
+  billTipAmount.innerHTML = "KES0.00";
+  billTotalPerPerson.innerHTML = "KES0.00";
   billAmount.value = "";
   numberOfPeople.value = "";
   customTipPercentage.value = "";
